@@ -1,0 +1,32 @@
+{
+    "name": "economtour",
+    "version": "0.0.0",
+    "private": true,
+    "scripts": {
+        "start": "node ./bin/www",
+        "dev": "nodemon ./bin/www"
+    },
+    "dependencies": {
+        "body-parser": "~1.18.2",
+        "browserify-middleware": "^8.1.1",
+        "ckeditor": "^4.10.1",
+        "cookie-parser": "~1.4.3",
+        "debug": "~2.6.9",
+        "express": "^4.16.4",
+        "express-handlebars": "^3.0.0",
+        "express-handlebars-sections": "^1.0.1",
+        "express-logger": "^0.0.3",
+        "jquery": "^3.3.1",
+        "morgan": "~1.9.0",
+        "mongoose": "^5.3.13",
+        "nodemailer": "^4.7.0",
+        "nodemailer-mailgun-transport": "^1.4.0",
+        "node-sass-middleware": "^0.11.0",
+        "serve-favicon": "~2.4.5"
+    },
+    "devDependencies": {
+        "browser-sync": "^2.26.3",
+        "connect-browser-sync": "^2.1.0",
+        "nodemon": "^1.18.4"
+    }
+}

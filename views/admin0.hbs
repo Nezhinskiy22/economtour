@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html ng-app="adminApp">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Dashboard</title>
+
+    <link href="/stylesheets/style.css" rel="stylesheet">
+</head>
+
+<body ng-controller="countryListController">
+    <div class="container">
+        <h1>{{demo}}</h1>
+        <table class="table table-bordered">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Snippet</th>
+                    <th>1</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr ng-repeat="country in countries">
+                    <td>{{country.name}}</td>
+                    <td>{{country.snippet}}</td>
+                    <td>*</td>
+                </tr>
+            </tbody>
+        </table>        
+    </div>
+</body>
+
+<!-- Latest compiled and minified CSS & JS -->
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+    crossorigin="anonymous"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.5/angular.min.js"></script>  
+ <script>
+  var adminApp = angular.module('adminApp', []);
+
+adminApp.controller('countryListController', ['$scope',
+    function ($scope) {       
+        $scope.demo='A';
+        $scope.countries = [
+            {
+                name: 'Nexus S',
+                snippet: 'Fast just got faster with Nexus S.'
+            }, {
+                name: 'Motorola XOOM™ with Wi-Fi',
+                snippet: 'The Next, Next Generation tablet.'
+            }, {
+                name: 'MOTOROLA XOOM™',
+                snippet: 'The Next, Next Generation tablet.'
+            }
+        ];
+    }]);
+</script>  
+</html>

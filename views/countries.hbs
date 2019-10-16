@@ -1,0 +1,18 @@
+<section>
+    <h1>{{title}}</h1>
+    <div class="row">
+        {{#each countries}}
+        <div class="col-sm-4 col-md-2">
+            <div class="thumbnail">
+                <img src="/images/flags-normal/{{countryImg}}.png" alt="{{countryAlt}}" style="width:120px; height:80px;">
+                <div class="caption">
+                    <h3>{{countryAlt}}</h3>
+                    <p><a class="btn btn-info" href="/country/{{_id}}">Read more... </a></p>
+                </div>
+            </div>
+        </div>
+        {{else}}
+         <h1>Empty</h1>
+        {{/each}}
+    </div>
+</section>

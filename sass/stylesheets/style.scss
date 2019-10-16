@@ -1,0 +1,11 @@
+@import 'bootstrap';
+.country_card {
+    height: 208px;
+    overflow: hidden;
+}
+
+.alert_layout {
+    position: relative;
+    top: -50px;
+    z-index: 1;
+}

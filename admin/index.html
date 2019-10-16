@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html ng-app="adminApp">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Admin Dashboard</title>
+
+    <link href="/stylesheets/style.css" rel="stylesheet">
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.3/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+
+</head>
+
+<body>
+    <div class="container">
+
+        <div class="navbar">
+            <a class="navbar-brand" href="#!">Admin</a>
+            <ul class="nav navbar-nav">
+                <li class="active">
+                    <a href="#!countries">Countries</a>
+                </li>
+                <li>
+                    <a href="#!tours">Tours</a>
+                </li>
+            </ul>
+        </div>
+        <div ng-view></div>
+    </div>
+</body>
+
+<!-- Latest compiled and minified CSS & JS -->
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.5/angular.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular-route.js"></script>
+<script src="/javascripts/admin/app.js"></script>
+<script src="/javascripts/admin/countryListController.js"></script>
+<script src="/javascripts/admin/tourListController.js"></script>
+
+
+</html>
